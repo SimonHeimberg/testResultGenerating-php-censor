@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="./bootstrap.php">
+    <testsuites>
+        <testsuite name="Money Test Suite">
+            <file>vendor/moneyphp/money/tests/MoneyTest.php</file>
+            <file>ExampleResults/ExampleFailuresTest.php</file>
+            <file>ExampleResults/EmptyWillWarnTest.php</file>
+            <file>ExampleResults/IntlMoneyParserTest.php</file>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
