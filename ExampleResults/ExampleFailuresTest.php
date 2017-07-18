@@ -30,6 +30,7 @@ class ExampleFailuresTest extends TestCase
 
     function testFailure4()
     {
+        echo "some output\nfrom f4";
         $this->assertTrue(false);
     }
 
@@ -54,6 +55,13 @@ class ExampleFailuresTest extends TestCase
      */
     function testDepends1()
     {
+    }
+
+    function testOutput()
+    {
+        echo "has output\non lines";
+        fwrite(STDERR, "some output\non std err");
+        $this->assertTrue(true);
     }
 
     public static function run3x()
